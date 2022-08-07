@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmTransfer" customModule="Four_Bank" customModuleProvider="target">
+            <connections>
+                <outlet property="lbDate" destination="1r6-fa-osL" id="2vV-9b-vsQ"/>
+                <outlet property="lbName" destination="iLA-sJ-hUe" id="uY0-35-zo8"/>
+                <outlet property="lbValue" destination="Euq-0p-fjH" id="tYt-oj-l6v"/>
+                <outlet property="myView" destination="AFy-WU-Wx4" id="4pS-WM-WC0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFy-WU-Wx4">
+                    <rect key="frame" x="-3" y="0.0" width="420" height="256"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOD-0y-uB0">
+                            <rect key="frame" x="20" y="52" width="50" height="50"/>
+                            <accessibility key="accessibilityConfiguration" label="Fechar"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="aWt-9W-a2B"/>
+                                <constraint firstAttribute="width" constant="50" id="qll-jp-YBO"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                            <connections>
+                                <action selector="btClose:" destination="-1" eventType="touchUpInside" id="pYr-5B-IDY"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comprovante de Transferência" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="3" translatesAutoresizingMaskIntoConstraints="NO" id="1tW-SM-21l">
+                            <rect key="frame" x="20" y="126" width="380" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="jLs-Pc-Apg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.027450980390000001" green="0.1333333333" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="1tW-SM-21l" firstAttribute="top" secondItem="AFy-WU-Wx4" secondAttribute="top" constant="126" id="Djc-BR-ewl"/>
+                        <constraint firstAttribute="width" constant="420" id="LDj-Kp-8mP"/>
+                        <constraint firstAttribute="height" constant="256" id="UTp-4d-Uew"/>
+                        <constraint firstItem="IOD-0y-uB0" firstAttribute="leading" secondItem="AFy-WU-Wx4" secondAttribute="leading" constant="20" id="YG6-Wh-qGU"/>
+                        <constraint firstAttribute="trailing" secondItem="1tW-SM-21l" secondAttribute="trailing" constant="20" id="f5j-xN-4Vz"/>
+                        <constraint firstItem="IOD-0y-uB0" firstAttribute="top" secondItem="AFy-WU-Wx4" secondAttribute="top" constant="52" id="koI-QJ-l19"/>
+                        <constraint firstItem="1tW-SM-21l" firstAttribute="leading" secondItem="AFy-WU-Wx4" secondAttribute="leading" constant="20" id="vSv-TS-lxS"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="fXi-tm-piy">
+                    <rect key="frame" x="20" y="290" width="374" height="139.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 de Maio de 2022, 16h00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1r6-fa-osL">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euq-0p-fjH">
+                            <rect key="frame" x="0.0" y="59.5" width="374" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para Rodrigo Hilbert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLA-sJ-hUe">
+                            <rect key="frame" x="0.0" y="119" width="374" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.82745098039999998" green="0.87843137250000003" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fXi-tm-piy" firstAttribute="top" secondItem="AFy-WU-Wx4" secondAttribute="bottom" constant="34" id="3Wc-dW-FTF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fXi-tm-piy" secondAttribute="bottom" constant="432.5" id="FJ2-NO-ANp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fXi-tm-piy" secondAttribute="trailing" constant="20" id="TcN-qo-NdB"/>
+                <constraint firstItem="AFy-WU-Wx4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="m1r-na-Kcd"/>
+                <constraint firstItem="AFy-WU-Wx4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vhe-v2-EgP"/>
+                <constraint firstItem="fXi-tm-piy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="zdE-9h-4nN"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="111.83035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>497485292043-mf8enia96uqs9g5kj928qrjq2sj9cpl8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.497485292043-mf8enia96uqs9g5kj928qrjq2sj9cpl8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDjMT7E5phgMU9ku7GvZ7nNMGIbey50UyI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>497485292043</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Rayra-Jovaneli.Four-Bank</string>
+	<key>PROJECT_ID</key>
+	<string>four-bank</string>
+	<key>STORAGE_BUCKET</key>
+	<string>four-bank.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:497485292043:ios:610d4223147f2ec0851d0e</string>
+</dict>
+</plist>

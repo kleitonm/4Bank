@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransferReceipt" customModule="Four_Bank" customModuleProvider="target">
+            <connections>
+                <outlet property="accountTextField" destination="OIy-cf-es8" id="4FB-IG-l2t"/>
+                <outlet property="agencyTextField" destination="WzV-Tx-phv" id="IpR-GK-D1W"/>
+                <outlet property="cpfTextField" destination="aBG-Cr-zzh" id="n9t-h8-HrL"/>
+                <outlet property="labelBalance" destination="8az-tQ-kfd" id="v88-tN-doP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90X-LD-FX9">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ra6-22-JeW">
+                            <rect key="frame" x="20" y="52" width="50" height="50"/>
+                            <accessibility key="accessibilityConfiguration" label="Voltar"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Niy-2X-OCH"/>
+                                <constraint firstAttribute="height" constant="50" id="ZdW-k0-XBs"/>
+                            </constraints>
+                            <color key="tintColor" red="0.027450980390000001" green="0.1333333333" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                            <connections>
+                                <action selector="goBackButton:" destination="-1" eventType="touchUpInside" id="Pfo-NR-Vuk"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para quem deseja transferir?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBV-7s-BMW">
+                            <rect key="frame" x="72" y="125" width="270" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="ATD-f4-Gqc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0000,00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8az-tQ-kfd">
+                            <rect key="frame" x="256" y="157" width="138" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.15294117647058825" green="0.40000000000000002" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Agência" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WzV-Tx-phv">
+                            <rect key="frame" x="20" y="233" width="374" height="34"/>
+                            <accessibility key="accessibilityConfiguration" label="Insira o número da agência"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="jbC-A0-WOO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Conta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OIy-cf-es8">
+                            <rect key="frame" x="20" y="287" width="374" height="34"/>
+                            <accessibility key="accessibilityConfiguration" label="Insira o número da conta"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="aq0-3s-cpd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CPF" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aBG-Cr-zzh">
+                            <rect key="frame" x="20" y="341" width="374" height="34"/>
+                            <accessibility key="accessibilityConfiguration" label="Insira o CPF"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="A3f-iO-idJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zS-qQ-0up">
+                            <rect key="frame" x="20" y="415" width="374" height="50"/>
+                            <color key="backgroundColor" red="0.027450980390000001" green="0.1333333333" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="VFl-Kh-8QV"/>
+                            </constraints>
+                            <color key="tintColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="CONFIRMAR DADOS">
+                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="confirmButton:" destination="-1" eventType="touchUpInside" id="r8r-bd-Zvz"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor da transferência: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DR-JC-ZOZ">
+                            <rect key="frame" x="50" y="157" width="188.5" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="2bh-1M-PjX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.15294117647058825" green="0.40000000000000002" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.82745098039999998" green="0.87843137250000003" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="OIy-cf-es8" firstAttribute="leading" secondItem="90X-LD-FX9" secondAttribute="leading" constant="20" id="02T-x6-aYt"/>
+                        <constraint firstItem="aBG-Cr-zzh" firstAttribute="leading" secondItem="90X-LD-FX9" secondAttribute="leading" constant="20" id="2Ui-RW-bR1"/>
+                        <constraint firstItem="ra6-22-JeW" firstAttribute="leading" secondItem="90X-LD-FX9" secondAttribute="leading" constant="20" id="5C9-dU-dHB"/>
+                        <constraint firstItem="aBG-Cr-zzh" firstAttribute="top" secondItem="OIy-cf-es8" secondAttribute="bottom" constant="20" id="Cd4-TS-2cv"/>
+                        <constraint firstItem="8zS-qQ-0up" firstAttribute="top" secondItem="aBG-Cr-zzh" secondAttribute="bottom" constant="40" id="FXc-dO-ni1"/>
+                        <constraint firstItem="OIy-cf-es8" firstAttribute="top" secondItem="WzV-Tx-phv" secondAttribute="bottom" constant="20" id="FsI-W4-8dh"/>
+                        <constraint firstAttribute="trailing" secondItem="8az-tQ-kfd" secondAttribute="trailing" constant="20" id="MLN-Ci-KqI"/>
+                        <constraint firstItem="8az-tQ-kfd" firstAttribute="leading" secondItem="8DR-JC-ZOZ" secondAttribute="trailing" constant="17.5" id="Mif-uU-d6l"/>
+                        <constraint firstAttribute="trailing" secondItem="OIy-cf-es8" secondAttribute="trailing" constant="20" id="Our-E5-bhq"/>
+                        <constraint firstAttribute="trailing" secondItem="WzV-Tx-phv" secondAttribute="trailing" constant="20" id="PY5-N2-B49"/>
+                        <constraint firstAttribute="trailing" secondItem="8zS-qQ-0up" secondAttribute="trailing" constant="20" id="QqG-y3-4O8"/>
+                        <constraint firstItem="8DR-JC-ZOZ" firstAttribute="top" secondItem="fBV-7s-BMW" secondAttribute="bottom" constant="8" id="Tn3-IS-Y52"/>
+                        <constraint firstAttribute="trailing" secondItem="fBV-7s-BMW" secondAttribute="trailing" constant="72" id="Xed-Xb-q1R"/>
+                        <constraint firstAttribute="width" constant="414" id="Ye9-fL-QWQ"/>
+                        <constraint firstItem="WzV-Tx-phv" firstAttribute="top" secondItem="8DR-JC-ZOZ" secondAttribute="bottom" constant="55" id="Z8t-Ne-0gz"/>
+                        <constraint firstItem="8az-tQ-kfd" firstAttribute="top" secondItem="90X-LD-FX9" secondAttribute="top" constant="157" id="dnc-07-Sa6"/>
+                        <constraint firstItem="8DR-JC-ZOZ" firstAttribute="leading" secondItem="90X-LD-FX9" secondAttribute="leading" constant="50" id="hFK-dR-act"/>
+                        <constraint firstItem="fBV-7s-BMW" firstAttribute="top" secondItem="90X-LD-FX9" secondAttribute="top" constant="125" id="iGi-2l-N82"/>
+                        <constraint firstItem="8zS-qQ-0up" firstAttribute="leading" secondItem="90X-LD-FX9" secondAttribute="leading" constant="20" id="lca-px-uDa"/>
+                        <constraint firstItem="ra6-22-JeW" firstAttribute="top" secondItem="90X-LD-FX9" secondAttribute="top" constant="52" id="mr3-ua-7pa"/>
+                        <constraint firstItem="fBV-7s-BMW" firstAttribute="leading" secondItem="90X-LD-FX9" secondAttribute="leading" constant="72" id="pcQ-y5-0gM"/>
+                        <constraint firstAttribute="height" constant="896" id="uer-1a-82o"/>
+                        <constraint firstAttribute="trailing" secondItem="aBG-Cr-zzh" secondAttribute="trailing" constant="20" id="xPI-3w-dEQ"/>
+                        <constraint firstItem="WzV-Tx-phv" firstAttribute="leading" secondItem="90X-LD-FX9" secondAttribute="leading" constant="20" id="yLt-pL-Qga"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="90X-LD-FX9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2c6-Ny-AGC"/>
+                <constraint firstItem="90X-LD-FX9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="4Mw-mf-ZLN"/>
+                <constraint firstItem="90X-LD-FX9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nOE-eJ-DaS"/>
+                <constraint firstAttribute="bottom" secondItem="90X-LD-FX9" secondAttribute="bottom" id="xai-dK-pb9"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="101.78571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
